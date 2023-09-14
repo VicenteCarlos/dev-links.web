@@ -1,0 +1,58 @@
+* { /* nesta linha, há o seletor universal, usado para fazer o resetCSS, ou seja, para resetar as configurações de todos os elementos */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat; /*Nesta linha, usa-se a propriedade de backgroundRepeat para a imagem não ficar repetida (no-repeat) */
+    background-size: cover; /*Nesta linha, usa-se o backgroundSize para definir o tamanho, ou seja, irá preencher toda a página (cover)*/
+}
+
+#container {
+    width: 360px;
+    /* height: 712px; */
+    border: 1px solid red;
+    margin: auto;
+}
+
+#profile {
+    text-align: center;
+}
+
+#profile img { /* nesta linha, leia-se o seguinte: img está dentro de #profile */
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+}
+
+ul li a:hover {
+    color: orange;
+    transition: 0.7s;
+}
+
+/*
+    Exemplos de margin's:
+        margin: auto; Nesta linha: (auto = cima, direita, baixo e esquerda)
+        margin: 0 auto; Nesta linha: (0 = cima/baixo), (auto = esquerda/direita)
+*/
